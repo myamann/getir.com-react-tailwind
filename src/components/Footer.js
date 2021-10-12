@@ -1,8 +1,8 @@
 import React from "react";
-import Menu from 'components/ui/Menu';
+import Menu from "components/ui/Menu";
+import { FaFacebook,FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
-
   const menus = [
     {
       title: "Getir'i Keşfedin",
@@ -25,45 +25,45 @@ const Footer = () => {
       ],
     },
     {
-        title: "Yardıma mı ihtiyacınız var?",
-        items: [
-          {
-            title: "Hakkımızda",
-          },
-          {
-            title: "Kariyer",
-          },
-          {
-            title: "İletişim",
-          },
-          {
-            title: "COVID-19 Duyuru",
-          },
-          {
-            title: "Sosyal Sorumluluk Projeleri",
-          },
-        ],
-      },
-      {
-        title: "İş Ortağımız Olun",
-        items: [
-          {
-            title: "Hakkımızda",
-          },
-          {
-            title: "Kariyer",
-          },
-          {
-            title: "İletişim",
-          },
-          {
-            title: "COVID-19 Duyuru",
-          },
-          {
-            title: "Sosyal Sorumluluk Projeleri",
-          },
-        ],
-      },
+      title: "Yardıma mı ihtiyacınız var?",
+      items: [
+        {
+          title: "Hakkımızda",
+        },
+        {
+          title: "Kariyer",
+        },
+        {
+          title: "İletişim",
+        },
+        {
+          title: "COVID-19 Duyuru",
+        },
+        {
+          title: "Sosyal Sorumluluk Projeleri",
+        },
+      ],
+    },
+    {
+      title: "İş Ortağımız Olun",
+      items: [
+        {
+          title: "Hakkımızda",
+        },
+        {
+          title: "Kariyer",
+        },
+        {
+          title: "İletişim",
+        },
+        {
+          title: "COVID-19 Duyuru",
+        },
+        {
+          title: "Sosyal Sorumluluk Projeleri",
+        },
+      ],
+    },
   ];
 
   return (
@@ -97,13 +97,31 @@ const Footer = () => {
               </a>
             </nav>
           </section>
-          {menus.map((menu,index)=> <Menu key={index} {...menu}/>)}
+          {menus.map((menu, index) => (
+            <Menu key={index} {...menu} />
+          ))}
         </div>
         <div className="flex justify-between items-center border-t border-gray-200 mt-6 py-6">
-            <div className="text-xs text-gray-700 flex gap-x-8">
-                &copy; 2021 Getir
-                <a href="/" className="text-primary-brand-color">Bilgi Toplumu Hizmetleri</a>
-            </div>
+          <div className="text-xs text-gray-700 flex gap-x-8">
+            &copy; 2021 Getir
+            <a
+              href="/"
+              className="text-primary-brand-color  hover:underline relative before:w-[3px] before:h-[3px] before:bg-black before:absolute before:-left-3 before:top-1/2 before:rounded-full "
+            >
+              Bilgi Toplumu Hizmetleri
+            </a>
+          </div>
+          <nav className="flex gap-x-3">
+              <a href="/" className="w-8 h-8 rounded-lg text-gray-500 transition-colors hover:bg-primary-brand-color hover:bg-opacity-10 hover:text-primary-brand-color flex items-center justify-center">
+                  <FaFacebook size={21}/>
+              </a>
+              <a href="/" className="w-8 h-8 rounded-lg text-gray-500 transition-colors hover:bg-primary-brand-color hover:bg-opacity-10 hover:text-primary-brand-color flex items-center justify-center">
+                  <FaTwitter size={21}/>
+              </a>
+              <a href="/" className="w-8 h-8 rounded-lg text-gray-500 transition-colors hover:bg-primary-brand-color hover:bg-opacity-10 hover:text-primary-brand-color flex items-center justify-center">
+                  <FaInstagram size={21}/>
+              </a>
+          </nav>
         </div>
       </div>
     </div>
