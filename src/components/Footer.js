@@ -1,6 +1,7 @@
 import React from "react";
 import Menu from "components/ui/Menu";
 import { FaFacebook,FaTwitter, FaInstagram } from "react-icons/fa";
+import { BiGlobe } from 'react-icons/bi'
 
 const Footer = () => {
   const menus = [
@@ -71,7 +72,7 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-4 pt-10">
           <section>
-            <nav>
+            <nav className="grid gap-y-2">
               <h6 className="text-lg text-primary-brand-color">
                 Getir'i indirin!
               </h6>
@@ -120,6 +121,10 @@ const Footer = () => {
               </a>
               <a href="/" className="w-8 h-8 rounded-lg text-gray-500 transition-colors hover:bg-primary-brand-color hover:bg-opacity-10 hover:text-primary-brand-color flex items-center justify-center">
                   <FaInstagram size={21}/>
+              </a>
+              <a href="/" className="h-8 transition-colors hover:bg-primary-brand-color hover:bg-opacity-10 hover:text-primary-brand-color hover:border-transparent flex items-center px-2 text-sm gap-x-2 rounded text-gray-500 border border-gray-100">
+            <BiGlobe size={18}/>
+            Türkçe (TR)
               </a>
           </nav>
         </div>

@@ -958,6 +958,11 @@ html,
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
+.border-gray-100 {
+  --tw-border-opacity: 1;
+  border-color: rgba(243, 244, 246, var(--tw-border-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -1321,6 +1326,10 @@ html,
 .hover\:border-brand-color:hover {
   --tw-border-opacity: 1;
   border-color: rgba(76, 51, 152, var(--tw-border-opacity));
+}
+
+.hover\:border-transparent:hover {
+  border-color: transparent;
 }
 
 .hover\:bg-primary-brand-color:hover {
