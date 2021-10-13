@@ -791,6 +791,10 @@ html,
   height: 1.5rem;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .w-\[150px\] {
   width: 150px;
 }
@@ -1061,6 +1065,11 @@ html,
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pt-8 {
@@ -1418,6 +1427,12 @@ html,
 .peer:focus ~ .peer-focus\:text-primary-brand-color {
   --tw-text-opacity: 1;
   color: rgba(93, 62, 188, var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:hidden {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
