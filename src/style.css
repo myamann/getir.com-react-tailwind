@@ -867,6 +867,10 @@ html,
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -885,6 +889,10 @@ html,
 
 .gap-0 {
   gap: 0px;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-y-6 {
@@ -1481,6 +1489,10 @@ html,
     height: 2.75rem;
   }
 
+  .md\:h-8 {
+    height: 2rem;
+  }
+
   .md\:w-\[400px\] {
     width: 400px;
   }
@@ -1497,6 +1509,14 @@ html,
 
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 
   .md\:justify-between {
@@ -1525,15 +1545,27 @@ html,
   .md\:pt-8 {
     padding-top: 2rem;
   }
+
+  .md\:text-left {
+    text-align: left;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:h-auto {
+    height: auto;
+  }
+
   .lg\:grid-cols-8 {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .lg\:self-end {
+    align-self: flex-end;
   }
 }
 
