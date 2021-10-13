@@ -1,7 +1,7 @@
 # Getir.com fully responsive
 
 
-## Tech's
+## Technologies
 Project is created with:
 
 * ReactJs
