@@ -26,7 +26,7 @@ const Cards = () => {
     setCards(cardsData);
   }, []);
 
-  return (<div className="grid md:grid-cols-2 ld:grid-cols-3 px-4 md:px-0 gap-4 ">
+  return (<div className="grid  md:grid-cols-2 lg:grid-cols-3 px-4 md:px-0 gap-4 ">
       {cards.length && cards.map(card => (
           <div className="bg-white p-14 rounded-lg shadow-sm flex flex-col items-center  text-center">
               <img className="w-[150px] h-[150px] mb-6" src={card.image} alt="resim"/>
